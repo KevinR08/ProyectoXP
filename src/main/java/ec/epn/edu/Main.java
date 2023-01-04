@@ -10,6 +10,7 @@ public class Main {
         conn.initConn();
 
         int opc = 9;
+        boolean logged=false;
 
         Participante participante = new Participante();
         participante.mostrarParticipantes();
@@ -18,6 +19,7 @@ public class Main {
             System.out.println("***MENÚ 1**" +
                     "\n1. Registrar Participante" +
                     "\n2. Login" +
+                    "\n3. Crear sala" +
                     "\n0. Salir");
             System.out.println("\n\tElegir opción: ");
             opc=sc.nextInt();
@@ -25,17 +27,26 @@ public class Main {
                 case 1:
                     System.out.println("Ingresar datos del participante");
                     System.out.println("Nombre - nickname - sociedad - contraseña");
-                    participante.registrarParticipante(sc.next(),sc.next(),sc.next(),sc.next());
+                    String nombre= sc.next();
+                    String nickname=sc.next();
+                    String sociedad=sc.next();
+                    String contrasenia = sc.next();
+                    if(participante.validarParametrosContrasenia(contrasenia)){
+                    participante.registrarParticipante(nombre, nickname, sociedad, contrasenia);
+                    }
+
                     break;
                 case 2:
                     System.out.println("Ingresar nickname");
-                    String nickname = sc.next();
+                    String nickname_ = sc.next();
                     System.out.println("Ingresar contraseña");
-                    String contrasenia= sc.next();
-                    participante.comprobarLogin(nickname, contrasenia);
+                    String contrasenia_= sc.next();
+                    participante.comprobarLogin(nickname_, contrasenia_);
                     break;
+                case 3:
+                    System.out.println("Seleccionar su rol");
+
             }
         }
-
     }
 }
