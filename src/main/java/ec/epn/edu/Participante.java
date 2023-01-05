@@ -78,11 +78,38 @@ public class Participante {
                     System.out.println("Contraseña incorrecta");
                 }
             }
-
         }catch (SQLException e) {
             System.out.println("Valores no encontrados");
             e.printStackTrace();
         }
         return log;
+    }
+
+    public boolean cargarParticipante(String nickname) {
+        boolean log = false;
+        try {
+            PreparedStatement stm = Conexion.connection.prepareStatement("SELECT * FROM PARTICIPANTE WHERE nickname='" + nickname + "'");
+            ResultSet result = stm.executeQuery();
+            while (result.next()) {
+                this.id_participante = result.getInt("id_participante");
+                this.nombre = result.getString("nickname");
+                this._nickname = result.getString("nickname");
+                this.sociedad_debate = result.getString("sociedad_debate");
+            }
+            }catch(SQLException e){
+                System.out.println("Valores no encontrados");
+                e.printStackTrace();
+            }
+        return log;
+    }
+
+
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getId_participante(){
+        return id_participante;
     }
 }
