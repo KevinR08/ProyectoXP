@@ -47,7 +47,7 @@ public class Main {
                         while (opc2 != 0) {
                             System.out.println("***MENÚ 2**" +
                                     "\nBienvenido "+participante.getNombre()+
-                                    "\n1. Crear sala" +
+                                    "\n1. Registrar Participación" +
                                     "\n0. Salir");
                             System.out.print("\n\tElegir opción: ");
                             opc2 = sc.nextInt();
