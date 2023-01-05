@@ -20,7 +20,7 @@ public class Main {
                     "\n1. Registrar Participante" +
                     "\n2. Login" +
                     "\n0. Salir");
-            System.out.println("\n\tElegir opción: ");
+            System.out.print("\n\tElegir opción: ");
             opc=sc.nextInt();
             switch (opc){
                 case 1:
@@ -38,9 +38,9 @@ public class Main {
                     break;
                 case 2:
                     participante = new Participante();
-                    System.out.println("Ingresar nickname");
+                    System.out.print("Ingresar nickname: ");
                     String nickname_ = sc.next();
-                    System.out.println("Ingresar contraseña");
+                    System.out.print("Ingresar contraseña: ");
                     String contrasenia_= sc.next();
                     if(participante.comprobarLogin(nickname_, contrasenia_)) {
                         participante.cargarParticipante(nickname_);
@@ -49,7 +49,7 @@ public class Main {
                                     "\nBienvenido "+participante.getNombre()+
                                     "\n1. Crear sala" +
                                     "\n0. Salir");
-                            System.out.println("\n\tElegir opción: ");
+                            System.out.print("\n\tElegir opción: ");
                             opc2 = sc.nextInt();
                             switch (opc2){
                                 case 1:
