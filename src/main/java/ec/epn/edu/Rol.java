@@ -20,6 +20,8 @@ public class Rol {
         try {
             PreparedStatement stm = Conexion.connection.prepareStatement("SELECT * FROM ROL");
             ResultSet result = stm.executeQuery();
+
+            /**/
             while (result.next()) {
                 this.id_rol=result.getInt("id_rol");
                 this.nombre_rol=result.getString("nombre_rol");

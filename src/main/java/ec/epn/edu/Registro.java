@@ -6,10 +6,10 @@ import java.util.Scanner;
 
 public class Registro {
     Participante participante;
-    //Sala sala;
     Rol rol;
     int id_participante;
     int id_rol;
+    int id_sala;
     int posiciónFinal;
     String retroalimentación;
     boolean victoria;
@@ -31,16 +31,26 @@ public class Registro {
         return escogido=true;
     }
 
-    public boolean insertarRegistro(){
+    public boolean insertarRegistro(int id_sala){
         try{
-            PreparedStatement stm = Conexion.connection.prepareStatement("INSERT INTO REGINDIVIDUAL(id_participante, id_rol)values(?,?)");
+            PreparedStatement stm = Conexion.connection.prepareStatement("INSERT INTO REGINDIVIDUAL(id_participante, id_rol, id_sala)values(?,?,?)");
             stm.setInt(1, this.participante.getId_participante());
             stm.setInt(2, this.id_rol);
+            stm.setInt(3, id_sala);
             stm.execute();
-
+            this.id_sala = id_sala;
+            this.id_participante=this.participante.getId_participante();
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return true;
+    }
+
+    public boolean controlarRolJuez(){
+        if(this.id_rol==2){
+            return true;
+        }else{
+            return false;
+        }
     }
 }

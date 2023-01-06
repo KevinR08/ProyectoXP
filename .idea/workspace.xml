@@ -5,13 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Refactorizaciones">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Rol.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,7 +56,8 @@
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -152,7 +165,9 @@
       <workItem from="1672632306490" duration="7577000" />
       <workItem from="1672800596838" duration="9904000" />
       <workItem from="1672844635360" duration="3026000" />
-      <workItem from="1672892125310" duration="5756000" />
+      <workItem from="1672892125310" duration="9401000" />
+      <workItem from="1672927439894" duration="3526000" />
+      <workItem from="1672961224318" duration="5403000" />
     </task>
     <task id="LOCAL-00001" summary="Creación de clase Conexión para Postgresql">
       <created>1672632808540</created>
@@ -189,7 +204,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672897565926</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactorizaciones">
+      <created>1672898479266</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1672898479266</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -14,9 +14,10 @@ public class Main {
 
         Participante participante;
         Registro registro;
+        Sala sala;
 
         while(opc!=0){
-            System.out.println("***MENÚ 1**" +
+            System.out.println("***MENÚ 1***" +
                     "\n1. Registrar Participante" +
                     "\n2. Login" +
                     "\n0. Salir");
@@ -45,19 +46,27 @@ public class Main {
                     if(participante.comprobarLogin(nickname_, contrasenia_)) {
                         participante.cargarParticipante(nickname_);
                         while (opc2 != 0) {
-                            System.out.println("***MENÚ 2**" +
+                            System.out.println("***MENÚ 2***" +
                                     "\nBienvenido "+participante.getNombre()+
-                                    "\n1. Registrar Participación" +
+                                    "\n1. Registrarse en sala" +
                                     "\n0. Salir");
                             System.out.print("\n\tElegir opción: ");
                             opc2 = sc.nextInt();
                             switch (opc2){
                                 case 1:
                                     registro = new Registro(participante);
-                                    System.out.println("Seleccionar su rol");
+                                    sala = new Sala();
+                                    System.out.println("Seleccionar número de rol");
                                     registro.elegirRol();
-                                    registro.insertarRegistro();
+                                    System.out.println("Seleccionar número de sala");
+                                    sala.mostrarSalas();
+                                    int id_sala=sc.nextInt();
+                                    registro.insertarRegistro(id_sala);
+                                    sala.cargarSala(id_sala);
+                                    sala.ActualizarNumEstado();
+
                                     break;
+
                             }
 
                         }
