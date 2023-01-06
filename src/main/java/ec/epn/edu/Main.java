@@ -1,6 +1,5 @@
 package ec.epn.edu;
 
-import java.net.ConnectException;
 import java.util.Scanner;
 
 public class Main {
@@ -14,8 +13,8 @@ public class Main {
 
         Participante participante;
         Registro registro;
-        Sala sala;
-
+        Sala sala = new Sala();;
+        int id_sala = 0, limit=0;
         while(opc!=0){
             System.out.println("***MENÚ 1***" +
                     "\n1. Registrar Participante" +
@@ -55,26 +54,29 @@ public class Main {
                             switch (opc2){
                                 case 1:
                                     registro = new Registro(participante);
-                                    sala = new Sala();
-                                    System.out.println("Seleccionar número de rol");
-                                    registro.elegirRol();
+
                                     System.out.println("Seleccionar número de sala");
                                     sala.mostrarSalas();
-                                    int id_sala=sc.nextInt();
+                                    id_sala=sc.nextInt();
+                                    System.out.println("Seleccionar número de rol");
+                                    registro.elegirRol(sala.limit);
                                     registro.insertarRegistro(id_sala);
                                     sala.cargarSala(id_sala);
                                     sala.ActualizarNumEstado();
-
+                                    System.out.println("\n***************SALA DE ESPERA********************");
+                                    System.out.println("-----------Participantes registrados---------------");
+                                    sala.mostrarRegistros(id_sala);
                                     break;
-
                             }
 
                         }
                     }
-                    break;
-
 
             }
+
         }
+        System.out.println("\n***************SALA DE ESPERA********************");
+        System.out.println("-----------Participantes registrados---------------");
+        sala.mostrarRegistros(id_sala);
     }
 }

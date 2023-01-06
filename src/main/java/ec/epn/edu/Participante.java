@@ -32,14 +32,12 @@ public class Participante {
     }
     public void registrarParticipante(String nombre, String nickname, String sociedad_debate, String contrasenia){
         try{
-
                 PreparedStatement stm = Conexion.connection.prepareStatement("INSERT INTO PARTICIPANTE(nombre, nickname, sociedad_debate, contrasenia)values(?,?,?,?)");
                 stm.setString(1, nombre);
                 stm.setString(2, nickname);
                 stm.setString(3, sociedad_debate);
                 stm.setString(4, contrasenia);
                 stm.execute();
-
     } catch (SQLException e) {
         e.printStackTrace();
         }
@@ -112,4 +110,15 @@ public class Participante {
     public int getId_participante(){
         return id_participante;
     }
+
+    @Override
+    public String toString() {
+        return
+                "ID=" + id_participante +
+                "Nombre='" + nombre +
+                "Nickname='" + _nickname +
+                "S_Debate='" + sociedad_debate;
+    }
 }
+
+
