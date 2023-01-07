@@ -37,7 +37,7 @@ public class Sala {
                 this.numDebatientes=result.getInt("numDebatientes");
                 this.quorum=result.getInt("quorum");
                 this.estado=result.getString("estado");
-                verificarQuorum();
+                verificarQuorum(this.numDebatientes, this.quorum);
                 System.out.println(id_sala+"\t|"+ nombreSala + "\t|"+ horario+"\t|N° Participantes:"+ numDebatientes+ "\t|Quorum:"+ quorum+ "\t|"+ANSI_RED +estado +ANSI_RESET);
             }
         } catch (SQLException e) {
@@ -83,12 +83,13 @@ public class Sala {
         }
     }
 
-    public void verificarQuorum(){
-        if(this.numDebatientes>=this.quorum){
+    public String verificarQuorum(int numDebatientes, int quorum){
+        if(numDebatientes>=quorum){
             this.estado="No disponible";
         }else{
             this.estado="Disponible";
         }
+        return this.estado;
     }
 
 

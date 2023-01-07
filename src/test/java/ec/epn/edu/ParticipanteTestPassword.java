@@ -18,10 +18,8 @@ public class ParticipanteTestPassword {
         private boolean expected;
         @Before
         public void setUp(){
-            System.out.println("SetUp()");
+            System.out.println("PruebaPasswordSeteada()");
             p=new Participante();
-            con=new Conexion();
-            con.initConn();
         }
 
         @Parameterized.Parameters

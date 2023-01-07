@@ -15,6 +15,7 @@ public class Main {
         Registro registro;
         Sala sala = new Sala();;
         int id_sala = 0, limit=0;
+        sala.cargarSala('k');
         while(opc!=0){
             System.out.println("***MENÚ 1***" +
                     "\n1. Registrar Participante" +

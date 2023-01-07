@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Target Cargado">
+    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Archivo Pom Modificado">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/SalaTestCargar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/SalaTestControlJuez.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/SalaTestQuorum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Conexion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Conexion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Participante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Rol.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTestPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTestPassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Participante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Participante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Registro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Registro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Rol.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Rol.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ec.epn.edu.ParticipanteTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ec.epn.edu.ParticipanteTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/surefire-reports/ec.epn.edu.ParticipanteTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ec.epn.edu.ParticipanteTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/ParticipanteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/ParticipanteTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/ParticipanteTestPassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/ParticipanteTestPassword.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -53,25 +52,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_opened_file_path": "C:/Users/Usuario/.m2/repository/org/postgresql/postgresql/42.5.1/postgresql-42.5.1.jar",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.4229885"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit4&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Usuario/.m2/repository/org/postgresql/postgresql/42.5.1/postgresql-42.5.1.jar&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.4229885&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -94,21 +93,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParticipanteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoXP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ec.epn.edu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ec.epn.edu" />
-      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.ParticipanteTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ParticipanteTestPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoXP" />
       <extension name="coverage">
@@ -124,7 +108,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParticipanteTestPassword.given_password_when_register_then_validate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalaTestCargar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoXP" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +117,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ec.epn.edu" />
-      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.ParticipanteTestPassword" />
-      <option name="METHOD_NAME" value="given_password_when_register_then_validate" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestCargar" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParticipanteTest.given_password_when_register_then_accept" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalaTestControlJuez" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoXP" />
       <extension name="coverage">
         <pattern>
@@ -149,8 +132,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ec.epn.edu" />
-      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.ParticipanteTest" />
-      <option name="METHOD_NAME" value="given_password_when_register_then_accept" />
+      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestControlJuez" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SalaTestControlJuez.given_credentials_when_login_then_ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoXP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ec.epn.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ec.epn.edu" />
+      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestControlJuez" />
+      <option name="METHOD_NAME" value="given_credentials_when_login_then_ok" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -159,10 +157,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SalaTestCargar" />
+        <item itemvalue="JUnit.SalaTestControlJuez" />
         <item itemvalue="JUnit.ParticipanteTestPassword" />
-        <item itemvalue="JUnit.ParticipanteTestPassword.given_password_when_register_then_validate" />
-        <item itemvalue="JUnit.ParticipanteTest" />
-        <item itemvalue="JUnit.ParticipanteTest.given_password_when_register_then_accept" />
+        <item itemvalue="JUnit.SalaTestControlJuez.given_credentials_when_login_then_ok" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +178,10 @@
       <workItem from="1672892125310" duration="9401000" />
       <workItem from="1672927439894" duration="3526000" />
       <workItem from="1672961224318" duration="22052000" />
-      <workItem from="1673021804504" duration="4950000" />
+      <workItem from="1673021804504" duration="5438000" />
+      <workItem from="1673032905450" duration="1941000" />
+      <workItem from="1673044041619" duration="2700000" />
+      <workItem from="1673101059896" duration="3274000" />
     </task>
     <task id="LOCAL-00001" summary="Creación de clase Conexión para Postgresql">
       <created>1672632808540</created>
@@ -231,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672969646055</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Archivo Pom Modificado">
+      <created>1673026815307</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673026815307</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,7 +263,8 @@
     <MESSAGE value="Creación de clase Registro para participar" />
     <MESSAGE value="Refactorizaciones" />
     <MESSAGE value="Target Cargado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Target Cargado" />
+    <MESSAGE value="Archivo Pom Modificado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Archivo Pom Modificado" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
