@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Archivo Pom Modificado">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/SalaTestCargar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/SalaTestControlJuez.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/SalaTestQuorum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTestPassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTestPassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-ec.epn.edu.ParticipanteTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ec.epn.edu.ParticipanteTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/ec.epn.edu.ParticipanteTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/ec.epn.edu.ParticipanteTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/ParticipanteTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/ParticipanteTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/ParticipanteTestPassword.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/ParticipanteTestPassword.class" afterDir="false" />
+    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Pruebas de Sala añadidas">
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/SalaTestCargar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/SalaTestControlJuez.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/SalaTestQuorum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +170,7 @@
       <workItem from="1673021804504" duration="5438000" />
       <workItem from="1673032905450" duration="1941000" />
       <workItem from="1673044041619" duration="2700000" />
-      <workItem from="1673101059896" duration="3274000" />
+      <workItem from="1673101059896" duration="3614000" />
     </task>
     <task id="LOCAL-00001" summary="Creación de clase Conexión para Postgresql">
       <created>1672632808540</created>
@@ -239,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673026815307</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Pruebas de Sala añadidas">
+      <created>1673105620052</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673105620052</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +260,8 @@
     <MESSAGE value="Refactorizaciones" />
     <MESSAGE value="Target Cargado" />
     <MESSAGE value="Archivo Pom Modificado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Archivo Pom Modificado" />
+    <MESSAGE value="Pruebas de Sala añadidas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pruebas de Sala añadidas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
