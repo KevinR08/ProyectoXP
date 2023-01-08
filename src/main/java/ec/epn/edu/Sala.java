@@ -4,6 +4,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Sala {
     private int id_sala;
@@ -15,7 +16,7 @@ public class Sala {
     private String estado;
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
-    public int limit;
+    public int limit=2;
     public Sala() {
     }
 
@@ -27,6 +28,7 @@ public class Sala {
     }
 
     public void mostrarSalas(){
+        actualizarNumEstado();
         try {
             PreparedStatement stm = Conexion.connection.prepareStatement("SELECT * FROM SALA");
             ResultSet result = stm.executeQuery();
@@ -64,22 +66,21 @@ public class Sala {
         return log;
     }
 
-    public void ActualizarNumEstado(){
-
-        //numDebatientes++;
-        try{
-            PreparedStatement stm = Conexion.connection.prepareStatement("select count(*) as num from regindividual where id_sala='" + id_sala + "'");
-            ResultSet result = stm.executeQuery();
-            while (result.next()) {
-                this.numDebatientes = result.getInt("num");
+    public void actualizarNumEstado(){
+        for(int i=0; i<5;i++) {
+            try {
+                PreparedStatement stm = Conexion.connection.prepareStatement("select count(*) as num from regindividual where id_sala='" + i + "'");
+                ResultSet result = stm.executeQuery();
+                while (result.next()) {
+                    this.numDebatientes = result.getInt("num");
+                }
+                PreparedStatement stm2 = Conexion.connection.prepareStatement("UPDATE SALA SET numDebatientes=?, estado=? where id_sala='" + i + "'");
+                stm2.setInt(1, numDebatientes);
+                stm2.setString(2, estado);
+                stm2.execute();
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-            PreparedStatement stm2 = Conexion.connection.prepareStatement("UPDATE SALA SET numDebatientes=?, estado=? where id_sala='" + id_sala + "'");
-            stm2.setInt(1, numDebatientes);
-            stm2.setString(2, estado);
-            stm2.execute();
-            System.out.println("Estado prueba"+estado);
-        } catch (SQLException e) {
-            e.printStackTrace();
         }
     }
 
@@ -106,10 +107,18 @@ public class Sala {
     public void mostrarRegistros(int id_sala) {
         registros.clear();
         try {
-            PreparedStatement stm = Conexion.connection.prepareStatement("SELECT id_participante, id_rol, id_sala FROM REGINDIVIDUAL WHERE id_sala='" + id_sala + "'");
+            PreparedStatement stm = Conexion.connection.prepareStatement("SELECT * FROM REGINDIVIDUAL WHERE id_sala='" + id_sala + "'");
             ResultSet result = stm.executeQuery();
             while (result.next()) {
-                registros.add(new Registro(result.getInt("id_participante"), result.getInt("id_rol"), result.getInt("id_sala")));
+                registros.add(new Registro(
+                        result.getInt("id_participante"),
+                        result.getInt("id_rol"),
+                        result.getInt("id_sala"),
+                        result.getString("camara"),
+                        result.getInt("posicion_final"),
+                        result.getString("retroalimentacion"),
+                        result.getBoolean("victoria"),
+                        result.getInt("speakerpoints")));
             }
             for(int i = 0; i< registros.size(); i++){
                 System.out.println(registros.get(i));
@@ -133,6 +142,29 @@ public class Sala {
         }
         return limit;
     }
+
+    public void dividirPorCamaras(){
+        registros.clear();
+        mostrarRegistros(id_sala);
+        System.out.println("SELECCIÓN DE CÁMARAS");
+        Scanner sc = new Scanner(System.in);
+        for(int i = 0; i< registros.size(); i++){
+            System.out.println("---Participante"+registros.get(i));
+            System.out.println("Ingrese la cámara a la que pertenece: (CAO CBO CAG CBG)");
+            String camara = sc.next();
+            int id_participante= registros.get(i).getId_participante();
+                try {
+                    PreparedStatement stm = Conexion.connection.prepareStatement("UPDATE REGINDIVIDUAL SET camara=? where id_sala='" + id_sala + "' and id_participante='"+id_participante+"'and id_rol=1");
+                    stm.setString(1, camara);
+                    stm.execute();
+                }catch(SQLException e){
+                    System.out.println("Valores no encontrados");
+                    e.printStackTrace();
+                }
+        }
+        //verTodosRegistros();
+    }
+
 
     public int getId_sala() {
         return id_sala;

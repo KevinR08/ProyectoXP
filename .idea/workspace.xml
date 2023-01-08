@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Pruebas de Sala añadidas">
-      <change afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/SalaTestCargar.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/SalaTestControlJuez.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/ec/epn/edu/SalaTestQuorum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Participante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Rol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Rol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +131,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalaTestControlJuez.given_credentials_when_login_then_ok" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalaTestQuorum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoXP" />
       <extension name="coverage">
         <pattern>
@@ -136,9 +140,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ec.epn.edu" />
-      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestControlJuez" />
-      <option name="METHOD_NAME" value="given_credentials_when_login_then_ok" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestQuorum" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,10 +149,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.SalaTestCargar" />
+        <item itemvalue="JUnit.SalaTestQuorum" />
         <item itemvalue="JUnit.SalaTestControlJuez" />
+        <item itemvalue="JUnit.SalaTestCargar" />
         <item itemvalue="JUnit.ParticipanteTestPassword" />
-        <item itemvalue="JUnit.SalaTestControlJuez.given_credentials_when_login_then_ok" />
       </list>
     </recent_temporary>
   </component>
@@ -170,7 +173,8 @@
       <workItem from="1673021804504" duration="5438000" />
       <workItem from="1673032905450" duration="1941000" />
       <workItem from="1673044041619" duration="2700000" />
-      <workItem from="1673101059896" duration="3614000" />
+      <workItem from="1673101059896" duration="3695000" />
+      <workItem from="1673105739150" duration="17047000" />
     </task>
     <task id="LOCAL-00001" summary="Creación de clase Conexión para Postgresql">
       <created>1672632808540</created>
@@ -235,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673105620052</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Pruebas de Sala añadidas">
+      <created>1673105653457</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1673105653457</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

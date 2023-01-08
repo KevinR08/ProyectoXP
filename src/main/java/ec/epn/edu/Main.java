@@ -8,76 +8,81 @@ public class Main {
         Conexion conn = new Conexion();
         conn.initConn();
 
-        int opc = 9, opc2=9;
-        boolean logged=false;
+        int opc = 9, opc2 = 9;
+        int id_sala = 0, limit = 0;
 
         Participante participante;
         Registro registro;
-        Sala sala = new Sala();;
-        int id_sala = 0, limit=0;
-        sala.cargarSala('k');
-        while(opc!=0){
-            System.out.println("***MENÚ 1***" +
+        Sala sala = new Sala();
+
+        while (opc != 0) {
+            System.out.println("******MENÚ 1*****" +
                     "\n1. Registrar Participante" +
                     "\n2. Login" +
                     "\n0. Salir");
             System.out.print("\n\tElegir opción: ");
-            opc=sc.nextInt();
-            switch (opc){
+            opc = sc.nextInt();
+            switch (opc) {
                 case 1:
                     participante = new Participante();
                     System.out.println("Ingresar datos del participante");
                     System.out.println("Nombre - nickname - sociedad - contraseña");
-                    String nombre= sc.next();
-                    String nickname=sc.next();
-                    String sociedad=sc.next();
+                    String nombre = sc.next();
+                    String nickname = sc.next();
+                    String sociedad = sc.next();
                     String contrasenia = sc.next();
-                    if(participante.validarParametrosContrasenia(contrasenia)){
-                    participante.registrarParticipante(nombre, nickname, sociedad, contrasenia);
+                    if (participante.validarParametrosContrasenia(contrasenia)) {
+                        participante.insertarParticipante(nombre, nickname, sociedad, contrasenia);
                     }
-
                     break;
                 case 2:
                     participante = new Participante();
                     System.out.print("Ingresar nickname: ");
                     String nickname_ = sc.next();
                     System.out.print("Ingresar contraseña: ");
-                    String contrasenia_= sc.next();
-                    if(participante.comprobarLogin(nickname_, contrasenia_)) {
+                    String contrasenia_ = sc.next();
+                    if (participante.comprobarLogin(nickname_, contrasenia_)) {
                         participante.cargarParticipante(nickname_);
                         while (opc2 != 0) {
+                            //System.out.println(participante.toString());
                             System.out.println("***MENÚ 2***" +
-                                    "\nBienvenido "+participante.getNombre()+
+                                    "\nBienvenido " + participante.getNombre() +
                                     "\n1. Registrarse en sala" +
                                     "\n0. Salir");
                             System.out.print("\n\tElegir opción: ");
                             opc2 = sc.nextInt();
-                            switch (opc2){
+                            switch (opc2) {
                                 case 1:
                                     registro = new Registro(participante);
-
                                     System.out.println("Seleccionar número de sala");
                                     sala.mostrarSalas();
-                                    id_sala=sc.nextInt();
+                                    id_sala = sc.nextInt();
                                     System.out.println("Seleccionar número de rol");
                                     registro.elegirRol(sala.limit);
+                                    System.out.println("doooooooosss"+registro.toString());
                                     registro.insertarRegistro(id_sala);
-                                    sala.cargarSala(id_sala);
-                                    sala.ActualizarNumEstado();
-                                    System.out.println("\n***************SALA DE ESPERA********************");
-                                    System.out.println("-----------Participantes registrados---------------");
-                                    sala.mostrarRegistros(id_sala);
-                                    break;
-                            }
 
+                                    sala.cargarSala(id_sala);
+                                    sala.actualizarNumEstado();
+                                    registro.cargarRegistro();
+
+                                    if (registro.getId_rol() == 1) {
+                                        System.out.println("\n***************SALA DE ESPERA********************");
+                                        System.out.println("-----------Participantes registrados---------------");
+                                        sala.mostrarRegistros(id_sala);
+                                    } else if (registro.getId_rol() == 2) {
+                                        System.out.println("\n*************CALIFICACIÓN DE DEBATIENTES**********************");
+                                        sala.dividirPorCamaras();
+                                        //registro.insertarRegistro(id_sala);
+                                        System.out.println("***NUEVO**");
+                                        sala.mostrarRegistros(id_sala);
+                                    }
+
+                            }
                         }
                     }
-
             }
-
         }
-        System.out.println("\n***************SALA DE ESPERA********************");
-        System.out.println("-----------Participantes registrados---------------");
-        sala.mostrarRegistros(id_sala);
     }
+
 }
