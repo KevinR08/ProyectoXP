@@ -76,7 +76,7 @@ public class Main {
                                                     "\n2. Visualizar speakerpoints" +
                                                     "\n3. Visualizar ganador de la sala");
                                             System.out.print("\n\tElegir opción: ");
-                                            opc2 = sc.nextInt();
+                                            opc3 = sc.nextInt();
                                             switch (opc3) {
                                                 case 1:
                                                     sala.mostrarRegistros(id_sala);

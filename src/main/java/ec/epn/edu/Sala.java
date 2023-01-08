@@ -58,6 +58,14 @@ public class Sala {
             e.printStackTrace();
         }
     }
+    public String verificarQuorum(int numDebatientes, int quorum){
+        if(numDebatientes>=quorum){
+            this.estado="No disponible";
+        }else{
+            this.estado="Disponible";
+        }
+        return this.estado;
+    }
 
     public boolean cargarSala(int id_sala) {
         boolean log = false;
@@ -100,14 +108,7 @@ public class Sala {
         }
     }
 
-    public String verificarQuorum(int numDebatientes, int quorum){
-        if(numDebatientes>=quorum){
-            this.estado="No disponible";
-        }else{
-            this.estado="Disponible";
-        }
-        return this.estado;
-    }
+
 
 
     public void mostrarRegistros(int id_sala) {

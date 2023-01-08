@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Iteración 2 estable">
+    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Iteracion 3 y 4 COmpletas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Participante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Participante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Participante.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Registro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Registro.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" afterDir="false" />
     </list>
@@ -149,10 +148,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.ParticipanteTestPassword" />
         <item itemvalue="JUnit.SalaTestQuorum" />
         <item itemvalue="JUnit.SalaTestControlJuez" />
         <item itemvalue="JUnit.SalaTestCargar" />
-        <item itemvalue="JUnit.ParticipanteTestPassword" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +173,7 @@
       <workItem from="1673032905450" duration="1941000" />
       <workItem from="1673044041619" duration="2700000" />
       <workItem from="1673101059896" duration="3695000" />
-      <workItem from="1673105739150" duration="37402000" />
+      <workItem from="1673105739150" duration="44061000" />
     </task>
     <task id="LOCAL-00001" summary="Creación de clase Conexión para Postgresql">
       <created>1672632808540</created>
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673151914738</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Iteracion 3 y 4 COmpletas">
+      <created>1673162263701</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1673162263701</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +294,8 @@
     <MESSAGE value="Pruebas de Sala añadidas" />
     <MESSAGE value="distribución de CAmaras" />
     <MESSAGE value="Iteración 2 estable" />
-    <option name="LAST_COMMIT_MESSAGE" value="Iteración 2 estable" />
+    <MESSAGE value="Iteracion 3 y 4 COmpletas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iteracion 3 y 4 COmpletas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
