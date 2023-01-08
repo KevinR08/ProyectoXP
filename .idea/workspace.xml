@@ -63,13 +63,39 @@
       <recent name="ec.epn.edu" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Interfaz">
+    <configuration name="Interfaz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proyectoestructurasdedatos.Interfaz" />
+      <module name="ProyectoXP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="proyectoestructurasdedatos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ec.epn.edu.Main" />
       <module name="ProyectoXP" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ec.epn.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProyectoEstructurasDeDatos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="proyectoestructurasdedatos.ProyectoEstructurasDeDatos" />
+      <module name="ProyectoXP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="proyectoestructurasdedatos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,36 +118,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalaTestCargar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoXP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ec.epn.edu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ec.epn.edu" />
-      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestCargar" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SalaTestControlJuez" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoXP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ec.epn.edu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ec.epn.edu" />
-      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestControlJuez" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SalaTestQuorum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoXP" />
       <extension name="coverage">
@@ -139,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Interfaz" />
+        <item itemvalue="Application.ProyectoEstructurasDeDatos" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.ParticipanteTestPassword" />
         <item itemvalue="JUnit.SalaTestQuorum" />
-        <item itemvalue="JUnit.SalaTestControlJuez" />
-        <item itemvalue="JUnit.SalaTestCargar" />
       </list>
     </recent_temporary>
   </component>
