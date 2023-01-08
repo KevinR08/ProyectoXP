@@ -57,7 +57,7 @@ public class Sala {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-    }
+    }/**/
     public String verificarQuorum(int numDebatientes, int quorum){
         if(numDebatientes>=quorum){
             this.estado="No disponible";
