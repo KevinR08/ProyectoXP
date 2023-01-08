@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Sala {
+    Mocion mocion_;
     private int id_sala;
     ArrayList<Registro> registros = new ArrayList<>();
     private String nombreSala;
@@ -14,6 +15,14 @@ public class Sala {
     private int numDebatientes;
     private int quorum;
     private String estado;
+    /*Nuevos*/
+    String meets;
+    int id_mocion;
+    String ganador;
+
+
+
+    /*Extras*/
     public static final String ANSI_RED = "\u001B[31m";
     public static final String ANSI_RESET = "\u001B[0m";
     public int limit=2;
@@ -39,8 +48,11 @@ public class Sala {
                 this.numDebatientes=result.getInt("numDebatientes");
                 this.quorum=result.getInt("quorum");
                 this.estado=result.getString("estado");
+                this.id_mocion=result.getInt("id_mocion");
+                this.meets=result.getString("meets");
+                this.ganador=result.getString("ganador");
                 verificarQuorum(this.numDebatientes, this.quorum);
-                System.out.println(id_sala+"\t|"+ nombreSala + "\t|"+ horario+"\t|N° Participantes:"+ numDebatientes+ "\t|Quorum:"+ quorum+ "\t|"+ANSI_RED +estado +ANSI_RESET);
+                System.out.println(id_sala+"\t|"+ nombreSala + "\t|"+ horario+"\t|N°Participantes:"+ numDebatientes+ "\t|Quorum:"+ quorum+ "\t|"+ANSI_RED +estado +ANSI_RESET);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -57,6 +69,10 @@ public class Sala {
                 this.horario = result.getString("horario");
                 this.numDebatientes = (result.getInt("numdebatientes"));
                 this.quorum = result.getInt("quorum");
+                this.estado=result.getString("estado");
+                this.id_mocion = result.getInt("id_mocion");
+                this.meets = result.getString("meets");
+                this.ganador = result.getString("ganador");
                 this.id_sala=id_sala;
             }
         }catch(SQLException e){
@@ -94,16 +110,6 @@ public class Sala {
     }
 
 
-    @Override
-    public String toString() {
-        System.out.println("PRUEBA*******");
-        return "Sala{" +
-                "id_sala=" + id_sala +
-                ", nombreSala='" + nombreSala + '\'' +
-                ", horario='" + horario + '\'' +
-                '}';
-    }
-
     public void mostrarRegistros(int id_sala) {
         registros.clear();
         try {
@@ -133,7 +139,6 @@ public class Sala {
     public int controlarRolJuez(ArrayList<Registro> registros){
         this.limit=2;
         for(int i = 0; i< registros.size(); i++){
-
             if(registros.get(i).getId_rol()==2 && registros.get(i).getId_sala()==this.id_sala){
                 limit=1;
             }else{
@@ -145,12 +150,13 @@ public class Sala {
 
     public void dividirPorCamaras(){
         registros.clear();
+        System.out.println("\n*************LISTADO DE DEBATIENTES**********************");
         mostrarRegistros(id_sala);
-        System.out.println("SELECCIÓN DE CÁMARAS");
+        System.out.println("\n*************SELECCIÓN DE CÁMARAS**************");
         Scanner sc = new Scanner(System.in);
         for(int i = 0; i< registros.size(); i++){
-            System.out.println("---Participante"+registros.get(i));
-            System.out.println("Ingrese la cámara a la que pertenece: (CAO CBO CAG CBG)");
+            System.out.println("\n---PARTICIPANTE-->  "+registros.get(i));
+            System.out.print("Ingrese la cámara a la que pertenece (CAO CBO CAG CBG): ");
             String camara = sc.next();
             int id_participante= registros.get(i).getId_participante();
                 try {
@@ -162,12 +168,38 @@ public class Sala {
                     e.printStackTrace();
                 }
         }
-        //verTodosRegistros();
+    }
+    public void asignarMeetsyMocion(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\tESCOJA EL NÚMERO DE MOCIÓN: ");
+        elegirMocion();
+        this.id_mocion = sc.nextInt();
+        System.out.print("\tINGRESE EL LINK DE MEETS: ");
+        this.meets = sc.next();
+            try {
+                PreparedStatement stm = Conexion.connection.prepareStatement("UPDATE SALA SET meets=?, id_mocion=? where id_sala='" + id_sala +"'");
+                stm.setString(1, meets);
+                stm.setInt(2, id_mocion);
+                stm.execute();
+            }catch(SQLException e){
+                System.out.println("Valores no encontrados");
+                e.printStackTrace();
+            }
+            mostrarSalas();
     }
 
+    public void elegirMocion(){
+        mocion_ = new Mocion();
+        mocion_.mostrarMocion();
+    }
 
-    public int getId_sala() {
-        return id_sala;
+    @Override
+    public String toString(){
+        System.out.println("\n******************RESUMEN******************");
+        return id_sala+"\t|"+ nombreSala + "\t|"+ horario+"\t|N°Participantes:"+ numDebatientes+ "\t|Quorum:"+ quorum+ "\t|"+ANSI_RED +estado +ANSI_RESET
+                +"\nMOCIÓN DEFINIDA: "+mocion_.buscarMocionporID(id_mocion)
+                +"\nLINK DE MEETS:"+this.meets
+                +"\n******************RESUMEN******************";
     }
 }
 

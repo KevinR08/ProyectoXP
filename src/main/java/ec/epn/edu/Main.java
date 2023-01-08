@@ -1,5 +1,6 @@
 package ec.epn.edu;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -59,7 +60,6 @@ public class Main {
                                     id_sala = sc.nextInt();
                                     System.out.println("Seleccionar número de rol");
                                     registro.elegirRol(sala.limit);
-                                    System.out.println("doooooooosss"+registro.toString());
                                     registro.insertarRegistro(id_sala);
 
                                     sala.cargarSala(id_sala);
@@ -68,14 +68,12 @@ public class Main {
 
                                     if (registro.getId_rol() == 1) {
                                         System.out.println("\n***************SALA DE ESPERA********************");
-                                        System.out.println("-----------Participantes registrados---------------");
                                         sala.mostrarRegistros(id_sala);
                                     } else if (registro.getId_rol() == 2) {
-                                        System.out.println("\n*************CALIFICACIÓN DE DEBATIENTES**********************");
                                         sala.dividirPorCamaras();
-                                        //registro.insertarRegistro(id_sala);
-                                        System.out.println("***NUEVO**");
                                         sala.mostrarRegistros(id_sala);
+                                        sala.asignarMeetsyMocion();
+                                        System.out.println(sala.toString());
                                     }
 
                             }
