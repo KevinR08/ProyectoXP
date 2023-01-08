@@ -100,8 +100,16 @@ public class Registro {
         return id_participante;
     }
 
-    public void setCamara(String camara) {
-        this.camara = camara;
+    public int getSpeakerPoints() {
+        return speakerPoints;
+    }
+
+    public boolean isVictoria() {
+        return victoria;
+    }
+
+    public String getCamara() {
+        return camara;
     }
     @Override
     public String toString() {

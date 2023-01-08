@@ -90,6 +90,19 @@ public class Participante {
         return id_participante;
     }
 
+
+    public String buscarParticipantePorID(int id_participante){
+        try {
+            PreparedStatement stm = Conexion.connection.prepareStatement("SELECT nombre FROM PARTICIPANTE where id_participante="+id_participante);
+            ResultSet result = stm.executeQuery();
+            while (result.next()) {
+                String nombre=result.getString("nombre_rol");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return nombre;
+    }
     @Override
     public String toString() {
         return

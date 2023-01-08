@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="distribución de CAmaras">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Mocion.java" afterDir="false" />
+    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="Iteración 2 estable">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Participante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Participante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Registro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Participante.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Participante.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Registro.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Registro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Rol.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Rol.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ec/epn/edu/Sala.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +174,7 @@
       <workItem from="1673032905450" duration="1941000" />
       <workItem from="1673044041619" duration="2700000" />
       <workItem from="1673101059896" duration="3695000" />
-      <workItem from="1673105739150" duration="27478000" />
+      <workItem from="1673105739150" duration="37402000" />
     </task>
     <task id="LOCAL-00001" summary="Creación de clase Conexión para Postgresql">
       <created>1672632808540</created>
@@ -254,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673140767206</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Iteración 2 estable">
+      <created>1673151914738</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673151914738</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +287,8 @@
     <MESSAGE value="Archivo Pom Modificado" />
     <MESSAGE value="Pruebas de Sala añadidas" />
     <MESSAGE value="distribución de CAmaras" />
-    <option name="LAST_COMMIT_MESSAGE" value="distribución de CAmaras" />
+    <MESSAGE value="Iteración 2 estable" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iteración 2 estable" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

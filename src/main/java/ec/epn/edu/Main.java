@@ -9,7 +9,7 @@ public class Main {
         Conexion conn = new Conexion();
         conn.initConn();
 
-        int opc = 9, opc2 = 9;
+        int opc = 9, opc2 = 9, opc3=9;
         int id_sala = 0, limit = 0;
 
         Participante participante;
@@ -68,14 +68,39 @@ public class Main {
 
                                     if (registro.getId_rol() == 1) {
                                         System.out.println("\n***************SALA DE ESPERA********************");
-                                        sala.mostrarRegistros(id_sala);
+                                        //sala.mostrarRegistros(id_sala);
+                                        while (opc3 != 0) {
+                                            //System.out.println(participante.toString());
+                                            System.out.println("*****VISUALIZACIÓN DE RESULTADOS******" +
+                                                    "\n1. Visualizar listado de posiciones finales" +
+                                                    "\n2. Visualizar speakerpoints" +
+                                                    "\n3. Visualizar ganador de la sala");
+                                            System.out.print("\n\tElegir opción: ");
+                                            opc2 = sc.nextInt();
+                                            switch (opc3) {
+                                                case 1:
+                                                    sala.mostrarRegistros(id_sala);
+                                                    break;
+                                                case 2:
+                                                    System.out.println("Speakers obtenidos: "+registro.getSpeakerPoints());
+                                                    break;
+                                                case 3:
+                                                    sala.mostrarGanador();
+                                            }
+                                        }
                                     } else if (registro.getId_rol() == 2) {
                                         sala.dividirPorCamaras();
                                         sala.mostrarRegistros(id_sala);
-                                        sala.asignarMeetsyMocion();
+                                        sala.asignarMeetsyMocion();//*borrar*/
                                         System.out.println(sala.toString());
-                                    }
+                                        /*Calificación de debate*/
+                                        sala.calificarCamaras("CAO");
+                                        sala.calificarCamaras("CBO");
+                                        sala.calificarCamaras("CAG");
+                                        sala.calificarCamaras("CBG");
+                                        sala.mostrarRegistros(id_sala);
 
+                                    }
                             }
                         }
                     }
