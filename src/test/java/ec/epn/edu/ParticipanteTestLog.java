@@ -9,7 +9,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 @RunWith(value = Parameterized.class)
-public class ParticipanteTest {
+public class ParticipanteTestLog {
     Participante p;
     Conexion con;
     private String nickname, contrasenia;
@@ -34,7 +34,7 @@ public class ParticipanteTest {
         return  objects;
     }
 
-    public ParticipanteTest(String nickname, String contrasenia, boolean expected){
+    public ParticipanteTestLog(String nickname, String contrasenia, boolean expected){
         this.nickname=nickname;
         this.contrasenia=contrasenia;
         this.expected=expected;

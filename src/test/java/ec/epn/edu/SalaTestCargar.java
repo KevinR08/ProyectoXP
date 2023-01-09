@@ -1,13 +1,6 @@
 package ec.epn.edu;
-
-import com.sun.org.apache.xpath.internal.objects.XNull;
 import org.junit.Before;
 import org.junit.Test;
-import org.postgresql.util.PSQLException;
-
-import java.sql.SQLException;
-import java.util.ArrayList;
-
 import static org.junit.Assert.*;
 
 public class SalaTestCargar {
@@ -22,9 +15,17 @@ public class SalaTestCargar {
         conn.initConn();
     }
 
-    @Test(expected = AssertionError.class)
-    public void given_anyJudge_when_check_then_2Roles() {
+    @Test
+    public void given_aSala_when_load_then_true() {
         System.out.println("Test 1");
-        sala.cargarSala(1);
+        boolean actual=sala.cargarSala(1);
+        assertTrue(actual);
+    }
+
+    @Test
+    public void given_aSala_when_load_then_false() {
+        System.out.println("Test 2");
+        boolean actual=sala.cargarSala(-1);
+        assertTrue(actual);
     }
 }

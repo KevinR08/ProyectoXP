@@ -4,13 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="cambioAud">
+    <list default="true" id="bd75e55a-fa82-4f3f-97fa-cf628d321d93" name="Changes" comment="ReleaseCompleto">
       <change afterPath="$PROJECT_DIR$/codigosEmpleadosSucursal1.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codigosEmpleadosSucursal2.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codigosEmpleadosSucursal3.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/codigosEmpleadosSucursal4.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/registroEmpleados2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ec/epn/edu/Sala.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/ArregloEmpleados.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/Empleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/Interfaz.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/Interfaz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/ListaDEnlazada.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/NodoEmpleado.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/NodoEmpleadoLista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/ProyectoEstructurasDeDatos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/proyectoestructurasdedatos/TablaHashEnlazadaEmpleados.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/ParticipanteTestLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ec/epn/edu/SalaTestCargar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ec/epn/edu/SalaTestCargar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT-jar-with-dependencies.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ProyectoXP-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +93,7 @@
       <recent name="ec.epn.edu" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Interfaz">
+  <component name="RunManager" selected="JUnit.All in ProyectoXP">
     <configuration name="Interfaz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="proyectoestructurasdedatos.Interfaz" />
       <module name="ProyectoXP" />
@@ -106,20 +120,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProyectoEstructurasDeDatos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="proyectoestructurasdedatos.ProyectoEstructurasDeDatos" />
+    <configuration name="All in ProyectoXP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoXP" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="proyectoestructurasdedatos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParticipanteTestPassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalaTestCargar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoXP" />
       <extension name="coverage">
         <pattern>
@@ -128,13 +137,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ec.epn.edu" />
-      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.ParticipanteTestPassword" />
+      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestCargar" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalaTestQuorum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SalaTestCargar.given_anyJudge_when_check_then_2Roles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoXP" />
       <extension name="coverage">
         <pattern>
@@ -143,19 +152,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ec.epn.edu" />
-      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestQuorum" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ec.epn.edu.SalaTestCargar" />
+      <option name="METHOD_NAME" value="given_anyJudge_when_check_then_2Roles" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Interfaz" />
-        <item itemvalue="Application.ProyectoEstructurasDeDatos" />
+        <item itemvalue="JUnit.All in ProyectoXP" />
+        <item itemvalue="JUnit.SalaTestCargar" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ParticipanteTestPassword" />
-        <item itemvalue="JUnit.SalaTestQuorum" />
+        <item itemvalue="JUnit.SalaTestCargar.given_anyJudge_when_check_then_2Roles" />
+        <item itemvalue="Application.Interfaz" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +188,7 @@
       <workItem from="1673044041619" duration="2700000" />
       <workItem from="1673101059896" duration="3695000" />
       <workItem from="1673105739150" duration="44104000" />
-      <workItem from="1673193703998" duration="2202000" />
+      <workItem from="1673193703998" duration="9113000" />
     </task>
     <task id="LOCAL-00001" summary="Creación de clase Conexión para Postgresql">
       <created>1672632808540</created>
@@ -292,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673193970593</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ReleaseCompleto">
+      <created>1673198204206</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673198204206</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +342,8 @@
     <MESSAGE value="Release final" />
     <MESSAGE value="Release final1" />
     <MESSAGE value="cambioAud" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambioAud" />
+    <MESSAGE value="ReleaseCompleto" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReleaseCompleto" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

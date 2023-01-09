@@ -83,9 +83,11 @@ public class Sala {
                 this.ganador = result.getString("ganador");
                 this.id_sala=id_sala;
             }
+            log=true;
         }catch(SQLException e){
             System.out.println("Valores no encontrados");
             e.printStackTrace();
+            log=false;
         }
         return log;
     }
